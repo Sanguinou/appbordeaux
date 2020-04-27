@@ -1,0 +1,140 @@
+ion-card {
+    border-radius: 10px;
+    border: 1px #949494;
+}
+  
+ion-segment-button {
+    width: auto;
+    --color: var(--ion-color-primary);
+}
+
+ion-label {
+    font-size: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+.search_button {
+    font-size: 25px;
+    width: 50px;
+    color: var(--ion-color-primary);
+}
+
+.center {
+    margin: auto;
+}
+
+.icon_margin {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.title {
+    margin-left: 20px;
+    align-items: baseline;
+}
+
+.vs {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #d45b5b;
+    font-weight: 800;
+}
+
+.list-header {
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.header {
+    background-image: url(../../assets/images/golf.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95px;
+    padding: 10px;
+}
+
+.match-line {
+    background-color: var(--ion-color-primary);
+    height: 15px;
+}
+
+.event-line {
+    background-color: #eb823c;
+    height: 15px;
+}
+
+.info {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.date {
+    font-size: 12px;
+    color: #eb823c;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 16px;
+    color: var(--ion-color-primary);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.hour {
+    font-size: 12px;
+    color: #333bad;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.match-division {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #dfdfdf;
+    float: right;
+}
+
+.team-1 {
+    margin-top: 10px;
+    height: 70px;
+}
+
+.team-2 {
+    position: absolute;
+    height: 50px;
+    top: 40px;
+    left: 45px;
+}
+
+.signin-button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 125px;
+    position: absolute;
+    right: 10px;
+    top: 95px;
+    font-size: 10px;
+    height: 30px;
+}
+
+.event-btn {
+    border: 1px solid #dd7082;
+    color: #dd7082;
+}
+
+.match-btn {
+    border: 1px solid var(--ion-color-primary);
+    color: var(--ion-color-primary);
+}
+
+.select-padding {
+    padding: 5px 10px;
+    font-size: 12px;
+}

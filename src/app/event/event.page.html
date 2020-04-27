@@ -1,0 +1,106 @@
+<ion-content>
+
+    <div class="header" style="background-color: #dd7082;">
+        <ion-button (click)="closeModal()" class="back_button ion-no-padding" style="margin-top: 20px;">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+        <div class="signin-button event-btn">
+          <ion-select class="select-padding" mode="ios" interface="popover" value="01">
+            <ion-select-option value="01">Je participe</ion-select-option>
+            <ion-select-option value="02">Intéressé</ion-select-option>
+          </ion-select>
+        </div>
+      </div>
+      <div class="event-line"></div>
+      <div class="info">
+        <div class="date">SAMEDI 16 AVRIL 2020</div>
+        <div class="event-title">GOLF ET AFTERWORK</div>
+        <div class="hour">16:00 - 20:00</div>
+        <div class="location"><ion-icon name="location"></ion-icon>Lille</div>
+      </div>
+
+    <div class="divider"></div>
+
+    <div class="desc_title">Participants</div>
+    <div class="scrolling-wrapper">
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="2">
+            <ion-avatar class="profile">
+              <div class="profile"></div>
+            </ion-avatar>
+          </ion-col>
+    </div>
+
+    <ion-segment (ionChange)="segmentClass()" mode="md" value="desc">
+      <ion-segment-button value="desc">
+        <ion-label>Description</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="publ">
+        <ion-label>Publications <span><ion-badge mode='ios'>2</ion-badge></span></ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div id="description">
+      <div class="desc_title">Description</div>
+      <p class="desc_text">
+          Afin de débuter cette nouvelle saison, nous vous proposons un After Work sportif au Golf de Pessac.
+      </p>
+  
+      <ion-button class="btn_signin" expand="block">Billeterie</ion-button>
+    </div>
+
+    <div id="publication" class="invisible">
+
+      <ion-card>
+        <div>
+          <ion-grid>
+            <ion-row class="ion-no-padding">
+              <ion-col size="2.5">
+                <div class="profile-publ"></div>
+              </ion-col>
+              <ion-col>
+                <div class="name-publ">Antoine TABLET</div>
+                <div>L'équipe des Girondins</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        
+        <div class="desc_text">
+          Rendez-vous chez mwaa
+        </div>
+      </ion-card>
+
+    </div>
+
+
+</ion-content>

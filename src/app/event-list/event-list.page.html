@@ -1,0 +1,137 @@
+<ion-header mode="ios">
+
+  <ion-toolbar mode="md" color="primary" style="padding-bottom: 40px;">
+      <div class="title_bg">
+          <ion-icon (click)="closeModal()" class="icon_margin" slot="start" name="arrow-back" size="small"></ion-icon>
+          <span class="title">Vos rendez-vous </span>
+      </div>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-segment [(ngModel)]="segment" mode="md" [value]="presence">
+    <div class="center search_button">
+      <ion-icon name="search"></ion-icon>
+    </div>
+    <ion-segment-button value="match">
+      <ion-label>Matchs</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="event">
+      <ion-label>Evénements</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="presence">
+      <ion-label>Mes présences</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'match'">
+      <ion-item lines="none" id="feb">
+        <ion-list-header class="list-header">
+            <ion-label>Février</ion-label>
+        </ion-list-header>
+      </ion-item>
+    
+      <ion-card (click)="presentModal()">
+        <div class="header" style="background-color: var(--ion-color-primary);">
+          <ion-text class="match-division">L1 / J25</ion-text>
+          <img class="team-1" src="../../assets/images/1200px-Logo_des_Girondins_de_Bordeaux.svg.png"/>
+          <img class="team-2" src="../../assets/images/unnamed.png">
+          <div class="signin-button match-btn">
+            <ion-select class="select-padding" mode="ios" interface="popover" value="01">
+              <ion-select-option value="01">Je participe</ion-select-option>
+              <ion-select-option value="02">Intéressé</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+        <div class="match-line"></div>
+        <div class="info">
+          <div class="date">SAMEDI 15 FEVRIER 2020</div>
+          <div class="event-title">BORDEAUX - PSG</div>
+          <div class="hour">20:00</div>
+        </div>
+      </ion-card>
+    </div>
+  
+    <div *ngSwitchCase="'event'">
+      <ion-item lines="none" id="apr">
+        <ion-list-header class="list-header">
+            <ion-label>Avril</ion-label>
+        </ion-list-header>
+      </ion-item>
+  
+      <ion-card (click)="presentModal()">
+        <div class="header" style="background-color: #dd7082;">
+          <div class="signin-button event-btn">
+            <ion-select class="select-padding" mode="ios" interface="popover" value="01">
+              <ion-select-option value="01">Je participe</ion-select-option>
+              <ion-select-option value="02">Intéressé</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+        <div class="event-line"></div>
+        <div class="info">
+          <div class="date">SAMEDI 16 AVRIL 2020</div>
+          <div class="event-title">GOLF ET AFTERWORK</div>
+          <div class="hour">16:00 - 20:00</div>
+        </div>
+      </ion-card>
+    </div>
+    
+    <div *ngSwitchDefault>
+      <ion-item lines="none" id="feb">
+        <ion-list-header class="list-header">
+            <ion-label>Février</ion-label>
+        </ion-list-header>
+      </ion-item>
+    
+      <ion-card (click)="presentModal()">
+        <div class="header">
+          <ion-text class="match-division">L1 / J25</ion-text>
+          <img class="team-1" src="../../assets/images/1200px-Logo_des_Girondins_de_Bordeaux.svg.png"/>
+          <img class="team-2" src="../../assets/images/unnamed.png">
+          <div class="signin-button match-btn">
+            <ion-select class="select-padding" mode="ios" interface="popover" value="01">
+              <ion-select-option value="01">Je participe</ion-select-option>
+              <ion-select-option value="02">Intéressé</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+        <div class="match-line"></div>
+        <div class="info">
+          <div class="date">SAMEDI 15 FEVRIER 2020</div>
+          <div class="event-title">BORDEAUX - PSG</div>
+          <div class="hour">20:00</div>
+        </div>
+      </ion-card>
+
+      <ion-item lines="none" id="apr">
+        <ion-list-header class="list-header">
+            <ion-label>Avril</ion-label>
+        </ion-list-header>
+      </ion-item>
+  
+      <ion-card (click)="presentModal()">
+        <div class="header" style="background-color: #dd7082;">
+          <div class="signin-button event-btn">
+            <ion-select class="select-padding" mode="ios" interface="popover" value="01">
+              <ion-select-option value="01">Je participe</ion-select-option>
+              <ion-select-option value="02">Intéressé</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+        <div class="event-line"></div>
+        <div class="info">
+          <div class="date">SAMEDI 16 AVRIL 2020</div>
+          <div class="event-title">GOLF ET AFTERWORK</div>
+          <div class="hour">16:00 - 20:00</div>
+        </div>
+      </ion-card>
+
+    </div>
+  </div>
+
+  
+</ion-content>

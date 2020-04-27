@@ -1,0 +1,155 @@
+ion-segment-button {
+    margin-bottom: 20px;
+    width: auto;
+    --color: var(--ion-color-primary);
+}
+
+ion-label {
+    font-size: 10px;
+}
+
+ion-card {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px #949494;
+}
+
+.invisible {
+    display: none;
+  }
+
+.header {
+    background-image: url(../../assets/images/golf.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 155px;
+    padding: 10px;
+}
+
+.signin-button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 130px;
+    position: absolute;
+    right: 10px;
+    top: 155px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.event-btn {
+    border: 1px solid #dd7082;
+    color: #dd7082;
+}
+
+.select-padding {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.event-line {
+    background-color: #eb823c;
+    height: 15px;
+}
+
+.info {
+    width: 100%;
+    padding: 20px 10px 10px 20px;
+}
+
+.date {
+    font-size: 12px;
+    color: #eb823c;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 16px;
+    color: var(--ion-color-primary);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.hour {
+    font-size: 12px;
+    color: #333bad;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 10px;
+    color: var(--ion-color-primary);
+}
+
+.back_button {
+    margin: 5%;
+    --border-radius: 100%;
+    --background: #ffffff54;
+    color: #cfcfcf;
+    width: 35px;
+    height: 35px;
+}
+
+.scrolling-wrapper {
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+.profile {
+    margin: auto;
+    border-radius: 100%;
+    background: var(--ion-color-primary);
+    width: 50px;
+    height: 50px;
+}
+
+.profile-publ {
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 100%;
+    background: #eb823c;
+    width: 45px;
+    height: 45px;
+}
+
+.divider {
+    border: 0.5px solid #c4ccd3;
+    margin: 20px 10px;
+}
+
+.desc_title {
+    margin-left: 10%;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.desc_text {
+    color: #818181;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.btn_signin {
+    margin: 10%;
+    --border-radius: 5px;
+    --background: var(--ion-color-primary);
+}
+
+.name-publ {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 900;
+    color: #000000;
+    letter-spacing: 1px;
+}
